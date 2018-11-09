@@ -29,4 +29,5 @@ asm_log2:
     vfma.f32 s2, s3, s0         @ s2 <= a0 + s0 * (a1 + s0 * ( a2 - s0 * (a3 + a4 * s0)))
     vadd.f32 s0, s2, s1         @ s0 <= taylor(mantissa(x)) + exponent(x)
     bx  lr                      @ Return to C
-
+    
+    
